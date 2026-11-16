@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dettaglio Carestia</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.0.3/lib/p5.min.js"></script>
+  </head>
+  <body>
+    <header class="detail-header">
+      <a href="index.html" class="back-btn" aria-label="Torna all'atlante">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="14" y1="8" x2="2" y2="8"></line>
+          <polyline points="7 3 2 8 7 13"></polyline>
+        </svg>
+      </a>
+
+      <h1 id="country-title">Caricamento...</h1>
+      <p class="detail-meta" id="detail-meta">
+        <span><strong>Continente:</strong> <span id="meta-continent">-</span></span>
+        <span><strong>Periodo:</strong> <span id="meta-period">-</span></span>
+      </p>
+    </header>
+
+    <main class="detail-main">
+      <div id="glyph-container"></div>
+
+      <aside class="decoding-card">
+        <h2>DECODIFICA DEI DATI</h2>
+
+        <div class="decode-row">
+          <div class="decode-icon"><div class="icon-mid" id="icon-mid"></div></div>
+          <div class="decode-text">
+            <strong>Area Piena: Mortalità Centrale</strong>
+            <span id="val-midpoint">-</span>
+          </div>
+        </div>
+
+        <div class="decode-row">
+          <div class="decode-icon"><div class="icon-upper" id="icon-upper"></div></div>
+          <div class="decode-text">
+            <strong>Contorno Tratteggiato: Stima Massima</strong>
+            <span id="val-upper">-</span>
+          </div>
+        </div>
+
+        <div class="decode-row">
+          <div class="decode-icon"><div class="icon-lower" id="icon-lower"></div></div>
+          <div class="decode-text">
+            <strong>Anello Bianco Interno: Stima Minima</strong>
+            <span id="val-lower">-</span>
+          </div>
+        </div>
+
+        <div class="decode-row">
+          <div class="decode-icon"><div class="icon-ray"></div></div>
+          <div class="decode-text">
+            <strong>Raggi Radiali: Durata dell'evento</strong>
+            <span id="val-duration">-</span>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <script src="detailSketch.js"></script>
+  </body>
+</html>

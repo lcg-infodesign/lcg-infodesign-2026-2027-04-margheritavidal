@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sketch</title>
-
+    <title>Atlante delle Carestie</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.0.3/lib/p5.min.js"></script>
   </head>
-
   <body>
+    <header class="page-header">
+      <h1>ATLANTE DELLE CARESTIE</h1>
+      <p class="subtitle">Clicca su un glifo per scoprire il singolo evento</p>
+
+      <div class="continent-legend">
+        <span class="legend-title">CONTINENTE</span>
+        <span class="legend-item"><i class="dot dot-asia"></i> Asia</span>
+        <span class="legend-item"><i class="dot dot-europe"></i> Europa</span>
+        <span class="legend-item"><i class="dot dot-africa"></i> Africa</span>
+        <span class="legend-item"><i class="dot dot-america"></i> America</span>
+      </div>
+    </header>
+
+    <main id="canvas-container"></main>
+
     <script src="sketch.js"></script>
   </body>
 </html>
